@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { NgModule } from '@angular/core'
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router'
 
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
     path: '',
@@ -19,7 +19,11 @@ const routes: Routes = [
     path: 'movie-details',
     loadChildren: () => import('./pages/movie-details/movie-details.module').then( m => m.MovieDetailsPageModule)
   },
-];
+  {
+    path: 'dnd-search',
+    loadChildren: () => import('./pages/dnd-search/dnd-search.module').then( m => m.DndSearchPageModule)
+  },
+]
 
 @NgModule({
   imports: [
