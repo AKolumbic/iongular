@@ -1,4 +1,6 @@
 declare namespace Falstera {
+  
+
   interface Character {
     name: string;
     level: number;
@@ -37,6 +39,13 @@ declare namespace Falstera {
     name: string
     description: string
     population: Race[]
+  }
+
+  interface NPC {
+    name: string
+    race: Race
+    combatRating: '1/8' | '1/4' | '1/2' | number
+    monsterType: string
   }
 }
 
