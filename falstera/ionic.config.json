@@ -1,0 +1,7 @@
+{
+  "name": "falstera",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
