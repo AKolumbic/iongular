@@ -32,6 +32,12 @@ declare namespace Falstera {
   | "Sorcerer"
   | "Warlock"
   | "Wizard"
+
+  interface Location {
+    name: string
+    description: string
+    population: Race[]
+  }
 }
 
 export = Falstera
