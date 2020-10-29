@@ -12,16 +12,16 @@ export enum Path {
 })
 
 export class DnDService {
-  URL = 'https://www.dnd5eapi.co/api/'
+  // URL = 'https://www.dnd5eapi.co/api/'
 
-  constructor(private http: HttpClient) {}
+  // constructor(private http: HttpClient) {}
 
-  getAll(type: Path) {
-    return this.http.get(`${this.URL}${Path[type]}`).toPromise()
-  }
+  // getAll(type: Path) {
+  //   return this.http.get(`${this.URL}${Path[type]}`).toPromise()
+  // }
 
-  searchFor(searchType: Path, input: string) {
-    const query = input.split(' ').map(word => word.toLowerCase()).join('-')
-    return this.http.get(`${this.URL}${Path[searchType]}${query}`).toPromise()
-  }
+  // searchFor(searchType: Path, input: string) {
+  //   const query = input.split(' ').map(word => word.toLowerCase()).join('-')
+  //   return this.http.get(`${this.URL}${Path[searchType]}${query}`).toPromise()
+  // }
 }

@@ -15,8 +15,8 @@ export class DnDSearchPage implements OnInit {
   constructor(private search: DnDService) {}
   ngOnInit() {}
 
-  onSearch() {
-    this.results = this.search.searchFor(this.searchType, this.input)
-  }
+  // onSearch() {
+  //   this.results = this.search.searchFor(this.searchType, this.input)
+  // }
 
 }
